@@ -6,7 +6,7 @@ class Book:
         self.reviews = reviews
 
 
-"""
+
     def create_dictionary(self):
         return {
             'link': self.link,
@@ -14,4 +14,3 @@ class Book:
             'isbn': self.isbn,
             'reviews': self.reviews,
         }
-"""

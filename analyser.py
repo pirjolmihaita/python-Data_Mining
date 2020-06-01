@@ -36,7 +36,7 @@ class Analyser:
 		scores = []
 		analyzer = SentimentIntensityAnalyzer()
 
-		for review in book['reviews'].values(): ###cum de aici putem['book.review]'
+		for review in book['reviews'].values():
 			score = analyzer.polarity_scores(review['content'])
 			scores.append(score)
 
@@ -64,5 +64,5 @@ class Analyser:
 			books_scores[brand] = {"isbn":isbn,"positive": pos, "negative": neg}
 		return books_scores
 
- 	#pot aici sa fac un dictionar unde sa bag ce trebuie neg pos
+
 

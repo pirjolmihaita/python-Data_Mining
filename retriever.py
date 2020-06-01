@@ -130,6 +130,4 @@ class Retriever:
 			book_reviews = Retriever.get_book_reviews(book_link)
 			books.append(Book(link=book_link, brand=book_brand,isbn=book_isbn, reviews=book_reviews))
 			i += 1
-
-
 		return books

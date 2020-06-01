@@ -44,7 +44,7 @@ class Operations:
         return BookEntry.objects.count()
 
     @staticmethod
-    def deleteBookByISBN(isbn): #cum de isbn este isbn
+    def deleteBookByISBN(isbn):
         BookEntry.objects(isbn=isbn).delete()
         print("[DELETE] Deleted book with isbn {} from database".format(isbn))
 
